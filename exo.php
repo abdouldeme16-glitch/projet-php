@@ -1,13 +1,33 @@
- <p>
- <?php
-
-$note = 8;
-
-if($note >= 10){
-    echo "Admis";
-}else{
-    echo "Échoué";
+<?php
+ $personnes = [
+    [
+        "nom" => "Ali",
+        "age" => 25
+    ],
+    [
+        "nom" => "Fatou",
+        "age" => 22
+    ],
+    [
+        "nom" => "Moussa",
+        "age" => 30
+    ]
+];
+ echo " Liqte des nom de pzesonne : <br>";
+  echo "Liste des noms :<br>";
+foreach ($personnes as $personne) {
+    echo "- " . $personne["nom"] . "<br>";
 }
+echo "<br>";
 
+$plusAgee = $personnes[0];
+foreach ($personnes as $personne) {
+    if ($personne["age"] > $plusAgee["age"]) {
+        $plusAgee = $personne;
+    }
+}
+echo "Personne la plus âgée : " . $plusAgee["nom"] . " (" . $plusAgee["age"] . " ans)<br><br>";
+
+$nombrePersonnes = count($personnes);
+echo "<strong>Nombre total de personnes :</strong> " . $nombrePersonnes . "<br>";
 ?>
-</p>
