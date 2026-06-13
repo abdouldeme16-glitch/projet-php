@@ -1,5 +1,4 @@
 <?php
-// 1. Initialisation du catalogue de la bibliothèque
 $livres = [
     [
         "titre" => "Le Vieux Nègre et la Médaille",
@@ -20,7 +19,7 @@ $livres = [
 
 while (true)
       {
-    echo "\n=== MENU BIBLIOTHÈQUE ===\n";
+    echo "\n MENU BIBLIOTHÈQUE \n";
     echo "1. Afficher tous les livres\n";
     echo "2. Afficher uniquement les livres disponibles\n";
     echo "3. Compter le nombre total de livres\n";
