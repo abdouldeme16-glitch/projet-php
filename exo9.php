@@ -8,7 +8,7 @@ $etudiants = [
 ];
 echo "Liste des étudiants et notes :<br>";
 foreach ($etudiants as $etudiant) {
-    echo "- " . $etudiant["nom"] . " : " . $etudiant["note"] . "/20<br>";
+    echo "- " . $etudiant["nom"] . " : " . $etudiant["note"] . "/20\n";
 }
 echo "<br>";
 
@@ -18,7 +18,7 @@ foreach ($etudiants as $etudiant) {
     $sommeNotes += $etudiant["note"];
 }
 $moyenne = $sommeNotes / count($etudiants);
-echo "Moyenne de la classe : " . $moyenne . "/20<br><br>";
+echo "Moyenne de la classe : " . $moyenne . "/20\n\n";
 
 
 $meilleurEtudiant = $etudiants[0];
@@ -27,12 +27,12 @@ foreach ($etudiants as $etudiant) {
         $meilleurEtudiant = $etudiant;
     }
 }
-echo "Meilleur(e) étudiant(e) :" . $meilleurEtudiant["nom"] . " avec " . $meilleurEtudiant["note"] . "/20<br><br>";
+echo "Meilleur(e) étudiant(e) :" . $meilleurEtudiant["nom"] . " avec " . $meilleurEtudiant["note"] . "/20\n\n";
 
-echo "Étudiants ayant la moyenne (>= 10) :<br>";
+echo "Étudiants ayant la moyenne (>= 10) :\n";
 foreach ($etudiants as $etudiant) {
     if ($etudiant["note"] >= 10) {
-        echo "- " . $etudiant["nom"] . " (" . $etudiant["note"] . "/20)<br>";
+        echo "- " . $etudiant["nom"] . " (" . $etudiant["note"] . "\n";
     }
 }
 ?>

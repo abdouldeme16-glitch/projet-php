@@ -26,8 +26,8 @@ foreach ($personnes as $personne) {
         $plusAgee = $personne;
     }
 }
-echo "Personne la plus âgée : " . $plusAgee["nom"] . " (" . $plusAgee["age"] . " ans)<br><br>";
+echo "Personne la plus âgée : " . $plusAgee["nom"] . " (" . $plusAgee["age"] . " ans)\n\n";
 
 $nombrePersonnes = count($personnes);
-echo "<strong>Nombre total de personnes :</strong> " . $nombrePersonnes . "<br>";
+echo "<strong>Nombre total de personnes :</strong> " . $nombrePersonnes . "\n";
 ?>
